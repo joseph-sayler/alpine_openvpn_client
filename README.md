@@ -29,7 +29,7 @@
 ##### _Build_
 
 `sudo docker build --tag=jsayler:alpine_openvpn .`
->_(note, for me, sudo is required due to the `.login`'s file ownership settings)_
+>_(note, for me, sudo is required due to the `.login` files ownership settings)_
 
 ##### _Run_
 
