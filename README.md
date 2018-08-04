@@ -1,6 +1,8 @@
 # alpine_openvpn_client
 ### OpenVPN Client Container
 
+Get it now on [Docker Hub!](https://hub.docker.com/r/jsayler/alpine_openvpn_client/)
+
 #### Setup Notes
 
 1. Create a folder (call it anything) and then cd to that folder
