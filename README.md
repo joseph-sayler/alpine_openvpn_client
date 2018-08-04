@@ -7,9 +7,9 @@
 2. Download the Dockerfile and put in this directory
 3. Create another folder to act as local volume for the container's /vpn directory, then cd into that folder
 	1. Here, put the ca file, crl file, and all the config scripts that are needed to connect to the vpn
-	2. **Mandatory**, create a file called openvpn.sh and put in whatever commands are needed to start openvpn for your VPN provider.<br>This part has been kept vague so that you can put whatever you want in this folder for openvpn to run. I use PIA so	For example, I put in the following extras:
+	2. **Mandatory**, create a file called openvpn.sh and put in whatever commands are needed to start openvpn for your VPN provider.<br>This part has been kept vague so that you can put whatever you want in this folder for openvpn to run. I use PIA so for example, I put in the following extras:
 		1. A file called `.login` to hold the VPN login credentials; change ownership of this file to root:root and set permissions to 600
-		2. PIA's openvpn config scripts, found here [here](https://www.privateinternetaccess.com/helpdesk/kb/articles/what-s-the-difference-between-the-ovpn-files); then unzip them in this folder
+		2. PIA's openvpn config scripts, found [here](https://www.privateinternetaccess.com/helpdesk/kb/articles/what-s-the-difference-between-the-ovpn-files); then unzip them in this folder
 		3. A script for renaming these client files and adding any extra lines/info to make them run
 4. If you are building the image from this repo, use the following command structure:<br>`docker build --tag=<REPOSITORY>:<TAG> .`
 5. After building, use the following command structure to run the container:<br>`docker run -itd --name=<NAME> --cap-add=NET_ADMIN --device=/dev/net/tun -v <DIRECTORY>:/vpn <REPOSITORY>:<TAG>`
