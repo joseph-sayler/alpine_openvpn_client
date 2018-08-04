@@ -33,7 +33,7 @@
 
 ##### _Run_
 
-`docker run -itd --name=ovpn_alpine --cap-add=NET_ADMIN --device=/dev/net/tun -v /home/orion/openvpn_container/vpn:/vpn jsayler:alpine_openvpn`
+`docker run -itd --name=ovpn_alpine --cap-add=NET_ADMIN --device=/dev/net/tun -v <DIRECTORY>:/vpn jsayler:alpine_openvpn`
 
 ##### _Connect_
 
