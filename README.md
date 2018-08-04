@@ -20,7 +20,7 @@
 #### Some changes to consider:
 	
 - [ ] Create a placeholder for openvpn.sh so that the file exists, but user has to put in their own code
-- [ ] Put the Dockerfile on GitHub, GitLab, or Bitbucket
+- [ ] ~~Put the Dockerfile on GitHub, GitLab, or Bitbucket~~
 - [ ] Look into setting up iptables rules in the container to prevent any leaks and put script to make these rules online with dockerfile
 
 
