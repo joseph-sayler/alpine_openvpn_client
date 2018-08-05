@@ -1,5 +1,4 @@
-# alpine_openvpn_client
-### OpenVPN Client Container
+# OpenVPN Client Container
 
 ###### Get it now on [Docker Hub!](https://hub.docker.com/r/jsayler/alpine_openvpn_client/)
 
@@ -11,9 +10,3 @@
 2. If you are building the image from this repo, use the following command structure:<br>`docker build --tag=<REPOSITORY>:<TAG> .`
 3. After building, use the following command structure to run the container:<br>`docker run -itd --name=<NAME> --cap-add=NET_ADMIN --device=/dev/net/tun -v <DIRECTORY>:/vpn <REPOSITORY>:<TAG>`
 4. To make best use of this container, connect other containers to it. This is done by connecting your other containers networking to the openvpn container via the `--network` switch:<br>`docker run -itd --name=<NAME> --network=container:<CONTAINER NAME> --device=/dev/net/tun <REPOSITORY>:<TAG> <command>`
-
-#### Some changes to consider:
-	
-- [ ] ~~Create a placeholder for openvpn.sh so that the file exists, but user has to put in their own code~~
-- [ ] ~~Put the Dockerfile on GitHub, GitLab, or Bitbucket~~
-- [ ] Look into setting up iptables rules in the container to prevent any leaks and put script to make these rules online with dockerfile
