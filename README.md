@@ -1,6 +1,6 @@
-# OpenVPN Client Container
+![Docker Build Status](https://img.shields.io/docker/build/jsayler/alpine_openvpn_client) ![GitHub issues](https://img.shields.io/github/issues/joseph-sayler/alpine_openvpn_client)
 
-###### Get it now on [Docker Hub!](https://hub.docker.com/r/jsayler/alpine_openvpn_client/)
+# OpenVPN Client Container
 
 #### Setup Notes
 
